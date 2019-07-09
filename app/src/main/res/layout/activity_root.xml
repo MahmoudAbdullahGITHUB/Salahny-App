@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@color/colorPrimary"
+    tools:context=".RootActivity">
+
+
+    <Button
+        android:id="@+id/Users"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="120dp"
+        android:onClick="Users_Button"
+        android:text="Users" />
+
+
+    <Button
+        android:id="@+id/Admins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="Admins_Button"
+        android:text="Admins" />
+
+
+</RelativeLayout>

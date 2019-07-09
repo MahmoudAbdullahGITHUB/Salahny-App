@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    tools:context=".PostSharedDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image" />
+            <EditText
+                android:id="@+id/ImageProblemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the image name"
+                />
+            <ImageView
+                android:id="@+id/ImageProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/L2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/L1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model" />
+
+            <EditText
+                android:id="@+id/Model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter the model" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/L3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/L2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description" />
+
+            <EditText
+                android:id="@+id/Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="tell the Description of the problem" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ShareItButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/L3"
+            android:layout_marginTop="20dp"
+            android:text="Share"
+            android:textSize="20dp"
+            android:onClick="ShareItButton"
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
